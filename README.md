@@ -21,3 +21,18 @@ add these code to module:{loaders:[<--code-->]}
 <code/>
 ## common components
 ### DataLoading
+数据加载中的转圈圈样式
+### Pagging
+监听页面滚动位置 配置页面title
+### DatePanel
+日期选择器 可以选择年 年月 年月日
+### SinglePicker
+单项选择器
+### DoublePicker
+双项选择器
+### TipBox
+需要点击关闭的白色弹框
+### Toast
+顶部灰条Toast
+### Warning
+带ICON的居中灰色toast
