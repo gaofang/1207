@@ -1,0 +1,84 @@
+.shadow{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 2;
+}
+.panel{
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+}
+.top {
+    height: 88px;
+    background-color: #11c1ae;
+    line-height: 88px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+.box {
+    height: 220px;
+    position: relative;
+}
+.label {
+    height: 20px;
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+}
+.options {
+    height: 150px;
+    width: 100%;
+    margin: 20px 0;
+    overflow-y: scroll;
+}
+.option {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    z-index: 5;
+}
+.line1, .line2 {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #11c1ae;
+    margin: 0 100px;
+    z-index: 10;
+}
+.line1 {
+    top: 90px;
+}
+.line2 {
+    top: 140px;
+}
+.action {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+}
+.cancel {
+    margin: 0 20px;
+    color: #333;
+}
+.confirm {
+    margin: 0 30px;
+    color: #11c1ae;
+}

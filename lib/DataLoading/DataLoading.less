@@ -1,0 +1,40 @@
+@fs-onloadtips:24;
+@pxToRem:100rem;
+.var-rotate(@animation-name,@animation-duration,@animation-timing-function,
+        @animation-delay,@animation-iteration-count,@animation-direction){
+  animation: @arguments;
+  /* Firefox: */
+  //-moz-animation: @arguments;
+  /* Safari 和 Chrome: */
+  -webkit-animation: @arguments;
+  /* Opera: */
+  //-o-animation: @arguments;
+}
+@keyframes rotate{
+  0%   {transform:rotate(0deg);}
+  50%  {transform:rotate(180deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes rotate
+{
+  0%   {-webkit-transform:rotate(0deg);}
+  50%  {-webkit-transform:rotate(180deg);}
+  100% {-webkit-transform:rotate(360deg);}
+}
+
+#loading-ico {
+  padding-top: 382/@pxToRem;
+  text-align: center;
+  img{
+    height: 72/@pxToRem;
+    width: 72/@pxToRem;
+    .var-rotate(rotate,1s,linear,0s,infinite,normal);
+  }
+}
+#loading-tips{
+  margin-top: 18/@pxToRem;
+  font-size: @fs-onloadtips/@pxToRem;
+  color: #a8a8a8;
+  text-align: center;
+}
